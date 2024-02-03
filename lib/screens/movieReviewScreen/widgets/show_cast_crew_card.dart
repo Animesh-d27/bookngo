@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_typing_uninitialized_variables
+
 import 'package:bookngo/utils/home_screen_images.dart';
 import 'package:flutter/material.dart';
 
@@ -20,11 +22,11 @@ class CastCrewCards extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
                   Text(text,
-                      style: TextStyle(
+                      style: const TextStyle(
                           fontSize: 20,
                           fontWeight: FontWeight.bold,
                           color: Colors.black54)),
-                  SizedBox(height: 2),
+                  const SizedBox(height: 2),
                   Expanded(
                       child: ListView.separated(
                           shrinkWrap: true,
@@ -44,7 +46,7 @@ class CastCrewCards extends StatelessWidget {
                                           image: DecorationImage(
                                               image: imageList[index],
                                               fit: BoxFit.fitHeight))),
-                                  SizedBox(height: 3),
+                                  const SizedBox(height: 3),
                                   Expanded(
                                     child: Text(
                                         '${AssetUtil().castnames[index]} ',

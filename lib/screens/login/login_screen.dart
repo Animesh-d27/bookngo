@@ -68,7 +68,6 @@ class _LoginScreenState extends State<LoginScreen> {
                                   phoneNumber = phone.completeNumber;
                                   buttonEnabled = phoneNumber.isNotEmpty;
                                 });
-                                print(phone.completeNumber);
                               }),
                           const Text(
                               'A 4-digit OTP will be sent via SMS to verify your phone number.',

@@ -38,7 +38,7 @@ class RateNowContainer extends StatelessWidget {
                           border: Border.all(color: AppColor.redTheme),
                           borderRadius:
                               const BorderRadius.all(Radius.circular(6))),
-                      child:  Center(
+                      child: const Center(
                           child: Text(StringConstants.kRateNow,
                               style: TextStyle(
                                   fontSize: 12,

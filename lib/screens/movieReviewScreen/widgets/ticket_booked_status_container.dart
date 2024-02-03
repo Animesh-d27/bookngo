@@ -40,7 +40,7 @@ class TicketBookedStatusContainer extends StatelessWidget {
                                 fontWeight: FontWeight.w500,
                                 color: Colors.white))
                       ]))),
-              Text(StringConstants.kNumbers,
+              const Text(StringConstants.kNumbers,
                   style: TextStyle(
                       fontSize: 15,
                       fontWeight: FontWeight.w500,

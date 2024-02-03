@@ -18,7 +18,7 @@ class RecommendationCardsHomeScreen extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(text,
-              style: TextStyle(
+              style: const TextStyle(
                   fontSize: 20,
                   fontWeight: FontWeight.bold,
                   color: Colors.black54)),
@@ -27,7 +27,7 @@ class RecommendationCardsHomeScreen extends StatelessWidget {
                 Navigator.push(
                     context,
                     MaterialPageRoute(
-                        builder: (context) => MovieReviewScreen()));
+                        builder: (context) => const MovieReviewScreen()));
               },
               child: SizedBox(
                   height: 270,
@@ -39,7 +39,7 @@ class RecommendationCardsHomeScreen extends StatelessWidget {
                         return Column(
                             mainAxisAlignment: MainAxisAlignment.center,
                             crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
+                            children: <Widget>[
                               Container(
                                   width: 130,
                                   height: 200,
@@ -49,7 +49,7 @@ class RecommendationCardsHomeScreen extends StatelessWidget {
                                       image: DecorationImage(
                                           image: imageList[index],
                                           fit: BoxFit.fitHeight))),
-                              SizedBox(height: 3),
+                              const SizedBox(height: 3),
                               Chip(
                                   side: const BorderSide(
                                       color: Colors.transparent),
@@ -64,7 +64,7 @@ class RecommendationCardsHomeScreen extends StatelessWidget {
                                   backgroundColor: Colors.grey[200],
                                   padding: const EdgeInsets.symmetric(
                                       vertical: 5, horizontal: 10)),
-                              SizedBox(height: 3),
+                              const SizedBox(height: 3),
                               Text(AssetUtil().movienames[index],
                                   style: const TextStyle(
                                       fontSize: 13, color: Colors.black54))

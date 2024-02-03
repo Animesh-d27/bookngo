@@ -10,9 +10,6 @@ class BottomNavBar extends StatefulWidget {
 class _BottomNavBarState extends State<BottomNavBar> {
   int _currentIndex = 1;
 
-  // Define your pages/screens here
-
-
   @override
   Widget build(BuildContext context) {
     return BottomNavigationBar(fixedColor: Colors.black,
@@ -24,7 +21,7 @@ class _BottomNavBarState extends State<BottomNavBar> {
           _currentIndex = index;
         });
       },
-      items: [
+      items: const [
         BottomNavigationBarItem(
           icon: Icon(Icons.home),
           label: 'Home',

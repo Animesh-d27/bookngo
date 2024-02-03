@@ -1,3 +1,5 @@
+// ignore_for_file: use_key_in_widget_constructors
+
 import 'package:bookngo/utils/appBar/custom_appbar_common.dart';
 import 'package:bookngo/utils/home_screen_images.dart';
 import 'package:flutter/material.dart';

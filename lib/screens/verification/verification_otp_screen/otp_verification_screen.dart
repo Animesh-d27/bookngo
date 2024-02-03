@@ -1,5 +1,4 @@
 import 'package:bookngo/screens/homeScreen/home_screen.dart';
-import 'package:bookngo/screens/login/login_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:pinput/pinput.dart';
 

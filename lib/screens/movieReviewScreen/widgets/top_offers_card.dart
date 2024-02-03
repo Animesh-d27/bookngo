@@ -9,10 +9,7 @@ class TopOffersCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-        onTap: () {
-          // Navigator.push(context,
-          //     MaterialPageRoute(builder: (context) => MovieReviewScreen()));
-        },
+        onTap: () {},
         child: SizedBox(
             height: 80,
             child: Column(
