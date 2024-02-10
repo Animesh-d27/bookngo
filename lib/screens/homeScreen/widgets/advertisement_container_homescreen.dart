@@ -1,3 +1,4 @@
+import 'package:bookngo/configs/app_dimensions.dart';
 import 'package:flutter/material.dart';
 
 class AdvertisementScreen extends StatelessWidget {
@@ -9,10 +10,8 @@ class AdvertisementScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
         height: 90,
-        width: 500,
-        margin: const EdgeInsets.symmetric(horizontal: 5.0),
         decoration: BoxDecoration(
-            borderRadius: const BorderRadius.all(Radius.circular(10)),
+            borderRadius: const BorderRadius.all(Radius.circular(kCircularRadius)),
             image:
                 DecorationImage(image: imgListAdd[0], fit: BoxFit.fitWidth)));
   }

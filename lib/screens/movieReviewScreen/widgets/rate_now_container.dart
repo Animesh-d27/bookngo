@@ -29,21 +29,26 @@ class RateNowContainer extends StatelessWidget {
                           fontWeight: FontWeight.bold,
                           color: Colors.black)),
                   const Spacer(),
-                  Container(
-                      height: 23,
-                      width: 75,
-                      margin: const EdgeInsets.symmetric(horizontal: 5.0),
-                      decoration: BoxDecoration(
-                          color: Colors.grey[200],
-                          border: Border.all(color: AppColor.redTheme),
-                          borderRadius:
-                              const BorderRadius.all(Radius.circular(6))),
-                      child: const Center(
-                          child: Text(StringConstants.kRateNow,
-                              style: TextStyle(
-                                  fontSize: 12,
-                                  fontWeight: FontWeight.w500,
-                                  color: AppColor.redTheme))))
+                  GestureDetector(
+                    onTap: (){
+                      
+                    },
+                    child: Container(
+                        height: 23,
+                        width: 75,
+                        margin: const EdgeInsets.symmetric(horizontal: 5.0),
+                        decoration: BoxDecoration(
+                            color: Colors.grey[200],
+                            border: Border.all(color: AppColor.redTheme),
+                            borderRadius:
+                                const BorderRadius.all(Radius.circular(6))),
+                        child: const Center(
+                            child: Text(StringConstants.kRateNow,
+                                style: TextStyle(
+                                    fontSize: 12,
+                                    fontWeight: FontWeight.w500,
+                                    color: AppColor.redTheme)))),
+                  ),
                 ])));
   }
 }

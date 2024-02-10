@@ -48,7 +48,8 @@ class RecommendationCardsHomeScreen extends StatelessWidget {
                                           Radius.circular(10)),
                                       image: DecorationImage(
                                           image: imageList[index],
-                                          fit: BoxFit.fitHeight))),
+                                          fit: BoxFit.fitHeight)
+                                  )),
                               const SizedBox(height: 3),
                               Chip(
                                   side: const BorderSide(
@@ -72,7 +73,7 @@ class RecommendationCardsHomeScreen extends StatelessWidget {
                       },
                       separatorBuilder: (BuildContext context, int index) {
                         return const SizedBox(width: 10);
-                      }))),
+                      })))
         ]);
   }
 }

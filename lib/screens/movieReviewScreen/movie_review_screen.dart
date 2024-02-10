@@ -27,7 +27,7 @@ class MovieReviewScreen extends StatelessWidget {
                 padding: const EdgeInsets.only(
                     right: bodyPadding, left: bodyPadding, bottom: bodyPadding),
                 child: Column(
-                    mainAxisAlignment: MainAxisAlignment.start,
+                    mainAxisAlignment: MainAxisAlignment.center,
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       const MovieImageContainer(),
@@ -36,9 +36,14 @@ class MovieReviewScreen extends StatelessWidget {
                       const SizedBox(height: 3),
                       const QualityDisplayCard(),
                       const SizedBox(height: 13),
+                      const SizedBox(
+                          child: Text(
+                              'Creator Ram Madhavan revealed right in the opening shot of the Season 3 trailer of his family crime drama Aarya that Sushmita Sen\'s titular character gets shot. ')),
+                      const SizedBox(height: 13),
                       const TicketBookedStatusContainer(),
                       const Divider(),
-                      const TopOffersCard(text: StringConstants.kTopOffersForYou),
+                      const TopOffersCard(
+                          text: StringConstants.kTopOffersForYou),
                       CastCrewCards(
                           imageList: AssetUtil().imgCastCrew,
                           text: StringConstants.kCREW),

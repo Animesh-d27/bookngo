@@ -10,14 +10,14 @@ class CustomAppBarHomeScreen extends StatelessWidget
   Widget build(BuildContext context) {
     return Container(
         padding: EdgeInsets.only(top: MediaQuery.of(context).padding.top),
-        height: 100,
+        height: 70,
         color: Colors.white, // Custom background color
         child: Row(
             mainAxisAlignment: MainAxisAlignment.start,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               SizedBox(
-                  width: 265,
+                  width: 280,
                   child: ListTile(
                       title: const Text('It All Starts Here',
                           style: TextStyle(
@@ -44,7 +44,7 @@ class CustomAppBarHomeScreen extends StatelessWidget
                         iconSize: 25,
                         icon: const Icon(Icons.search),
                         onPressed: () {},
-                        color: Colors.black),
+                        color: Colors.black54),
                     IconButton(
                         highlightColor: Colors.transparent,
                         iconSize: 25,
@@ -56,13 +56,13 @@ class CustomAppBarHomeScreen extends StatelessWidget
                                   builder: (BuildContext context) =>
                                       const NotificationScreen()));
                         },
-                        color: Colors.black),
+                        color: Colors.black54),
                     IconButton(
                         iconSize: 25,
                         highlightColor: Colors.transparent,
                         icon: const Icon(Icons.qr_code_scanner_rounded),
                         onPressed: () {},
-                        color: Colors.black)
+                        color: Colors.black54),
                   ])
             ]));
   }

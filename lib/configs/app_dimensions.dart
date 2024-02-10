@@ -1,5 +1,5 @@
 const double kCardRadius = 12;
-const double kCircularRadius = 5;
+const double kCircularRadius = 10;
 const double kVerticalPadding = 8;
 const double kAddButtonWidth = 100;
 const double kDataTableContainerWidth = 2000;
