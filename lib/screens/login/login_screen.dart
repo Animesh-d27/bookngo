@@ -54,7 +54,7 @@ class _LoginScreenState extends State<LoginScreen> {
                                       fontSize: 20,
                                       fontFamily: 'Urbanist'))),
                           const SizedBox(height: 10),
-                          IntlPhoneField(
+                          IntlPhoneField(disableLengthCheck: true,
                               decoration: const InputDecoration(
                                   border: OutlineInputBorder(
                                       borderSide:
@@ -69,12 +69,16 @@ class _LoginScreenState extends State<LoginScreen> {
                                   buttonEnabled = phoneNumber.isNotEmpty;
                                 });
                               }),
-                          const Text(
-                              'A 4-digit OTP will be sent via SMS to verify your phone number.',
-                              style: TextStyle(
-                                  color: Colors.black26,
-                                  fontSize: 17,
-                                  fontFamily: 'Urbanist')),
+                          const SizedBox(height: 10),
+                          const SizedBox(
+                            width: 350,
+                            child: Text(
+                                'A 4-digit OTP will be sent via SMS to verify your phone number.',textAlign: TextAlign.center,
+                                style: TextStyle(
+                                    color: Colors.black26,
+                                    fontSize: 14,
+                                    fontFamily: 'Urbanist'))
+                          ),
                           const SizedBox(height: 100),
                           SizedBox(
                               height: 50,

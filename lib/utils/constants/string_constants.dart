@@ -34,5 +34,6 @@ class StringConstants {
   static const kCancel = "Cancel";
   static const kBookNow = "Book Now";
   static const kYouMightaAlsoLike = "You might also like";
+  static const kHi = "Hi";
   static String kLikes = '${AssetUtil().likes[1]} Likes';
 }

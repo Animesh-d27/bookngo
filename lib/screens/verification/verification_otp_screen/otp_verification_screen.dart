@@ -25,12 +25,18 @@ class OtpVerificationScreen extends StatelessWidget {
                         mainAxisAlignment: MainAxisAlignment.center,
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: [
-                          SizedBox(
-                              height: 90,
-                              width: 90,
-                              child: Image.asset('assets/images/otp.png',
-                                  fit: BoxFit.fitHeight)),
-                          const SizedBox(height: 30),
+                          Row(
+                            children: [ const SizedBox(
+                                width: 100
+                            ),
+                              SizedBox(
+                                  height: 230,
+                                  width: 230,
+                                  child: Image.asset('assets/images/otp.png',
+                                      fit: BoxFit.fitHeight))
+                            ]
+                          ),
+                          const SizedBox(height: 40),
                           const Text(
                               'A 4-digit OTP has been sent to the registered no. 91XXXX6622',
                               textAlign: TextAlign.center),
@@ -44,20 +50,8 @@ class OtpVerificationScreen extends StatelessWidget {
                                       border: Border.all(
                                           color: Colors.redAccent))),
                               onCompleted: (pin) => debugPrint(pin)),
-                          const SizedBox(height: 15),
-                          const Row(
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              children: [
-                                Text('Didn\'t receive the code?  ',
-                                    style: TextStyle(
-                                        color: Colors.black26,
-                                        fontSize: 17,
-                                        fontFamily: 'Urbanist')),
-                                Text('Resend',
-                                    style: TextStyle(
-                                        color: Colors.redAccent, fontSize: 14))
-                              ]),
-                          const SizedBox(height: 150),
+
+                          const SizedBox(height: 60),
                           SizedBox(
                               height: 50,
                               width: 300,
@@ -76,7 +70,19 @@ class OtpVerificationScreen extends StatelessWidget {
                                   child: const Text('Verify',
                                       style: TextStyle(
                                           fontSize: 20,
-                                          fontFamily: 'Urbanist'))))
+                                          fontFamily: 'Urbanist')))),const SizedBox(height: 8),
+                          const Row(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                Text('Didn\'t receive the code? ',
+                                    style: TextStyle(
+                                        color: Colors.black26,
+                                        fontSize: 14,
+                                        fontFamily: 'Urbanist')),
+                                Text('Resend',
+                                    style: TextStyle(
+                                        color: Colors.redAccent, fontSize: 14,fontWeight: FontWeight.bold))
+                              ]),
                         ])))));
   }
 }
