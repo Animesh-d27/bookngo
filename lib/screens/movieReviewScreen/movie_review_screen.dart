@@ -19,7 +19,7 @@ class MovieReviewScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         backgroundColor: Colors.white,
-        bottomNavigationBar: const BookTicketBottomBar(),
+        bottomNavigationBar: const BookTicketBottomBar(text: StringConstants.kBookNow),
         appBar: const CustomAppBarCommon(),
         body: SingleChildScrollView(
             physics: const BouncingScrollPhysics(),
@@ -35,7 +35,7 @@ class MovieReviewScreen extends StatelessWidget {
                       const RateNowContainer(),
                       const SizedBox(height: 3),
                       const QualityDisplayCard(),
-                      const SizedBox(height: 13),
+                      const SizedBox(height: 3),
                       const SizedBox(
                           child: Text(
                               'Creator Ram Madhavan revealed right in the opening shot of the Season 3 trailer of his family crime drama Aarya that Sushmita Sen\'s titular character gets shot. ')),
@@ -47,14 +47,14 @@ class MovieReviewScreen extends StatelessWidget {
                       CastCrewCards(
                           imageList: AssetUtil().imgCastCrew,
                           text: StringConstants.kCREW),
-                      const SizedBox(height: spacingBetweenWidgets),
+                      const SizedBox(height: spacingBetweenCardWidgets),
                       CastCrewCards(
                           imageList: AssetUtil().imgMovies,
                           text: StringConstants.kCAST),
-                      const SizedBox(height: spacingBetweenWidgets),
+                      const SizedBox(height: spacingBetweenCardWidgets),
                       RecommendationCardsHomeScreen(
                           imageList: AssetUtil().imgEvents,
-                          text: StringConstants.kYouMightaAlsoLike)
+                          text: StringConstants.kYouMightAlsoLike)
                     ]))));
   }
 }

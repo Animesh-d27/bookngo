@@ -33,6 +33,10 @@ class StringConstants {
   static const kTopOffersForYou = "Top Offers For You";
   static const kCancel = "Cancel";
   static const kBookNow = "Book Now";
-  static const kYouMightaAlsoLike = "You might also like";
+  static const kSubmitNow = "Submit Now";
+  static const kTheyHelp = "The help others to decide what to watch next.";
+  static const kHowWouldYouRate = "How Would You Rate The Movie?";
+  static const kYourRatingMatters = "Your Rating Matters!";
+  static const kYouMightAlsoLike = "You might also like";
   static String kLikes = '${AssetUtil().likes[1]} Likes';
 }
