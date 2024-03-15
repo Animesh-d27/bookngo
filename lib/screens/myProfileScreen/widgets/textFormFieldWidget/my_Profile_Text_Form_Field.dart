@@ -15,13 +15,13 @@ class MyProfileTextFormField extends StatelessWidget {
             constraints: const BoxConstraints(maxHeight: 40),
             contentPadding: const EdgeInsets.only(
                 top: kTextFormFieldPadding,
-                left: kTextFormFieldPadding,
+                left: kLeftTextFormFieldPadding,
                 right: kTextFormFieldPadding),
             enabledBorder: const OutlineInputBorder(
                 borderSide: BorderSide(color: Colors.black12)),
             border: const OutlineInputBorder(
                 borderSide: BorderSide(color: Colors.black12)),
             hintText: hintText,
-            hintStyle: const TextStyle(fontSize: 20, color: Colors.black54)));
+            hintStyle: const TextStyle(fontSize:16, color: Colors.black38,fontWeight: FontWeight.normal )));
   }
 }

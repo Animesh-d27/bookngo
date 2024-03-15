@@ -1,4 +1,4 @@
-import 'package:bookngo/screens/notificationScreen/notification_screen.dart';
+import 'package:bookngo/screens/myProfileScreen/my_profile_screen.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
@@ -48,13 +48,13 @@ class CustomAppBarHomeScreen extends StatelessWidget
                     IconButton(
                         highlightColor: Colors.transparent,
                         iconSize: 25,
-                        icon: const Icon(Icons.notifications_none_rounded),
+                        icon: const Icon(Icons.person_2_rounded),
                         onPressed: () {
                           Navigator.push(
                               context,
                               MaterialPageRoute(
                                   builder: (BuildContext context) =>
-                                      const NotificationScreen()));
+                                      const MyProfileScreen()));
                         },
                         color: Colors.black54),
                     IconButton(

@@ -17,7 +17,7 @@ class HomesScreen extends StatelessWidget {
     return Scaffold(
         backgroundColor: Colors.white,
         appBar: const CustomAppBarHomeScreen(),
-        bottomNavigationBar: const BottomNavBar(),
+        bottomNavigationBar:  BottomNavBar(),
         body: SingleChildScrollView(
             physics: const BouncingScrollPhysics(),
             child: Column(

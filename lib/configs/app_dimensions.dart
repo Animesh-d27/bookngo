@@ -10,4 +10,5 @@ const double kDashboardHorizontalPadding = 20;
 const double kDashboardVerticalPadding = 10;
 const double kBackIconSize = 25;
 const double kTextFormFieldPadding = 15;
+const double kLeftTextFormFieldPadding = 10;
 const double kElevatedButtonHeight = 50;
